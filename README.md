@@ -1,6 +1,7 @@
 # Draw-the-world
 
-##  »¶Ó­À´µ½»­ÊÀ½ç
+
+##  è¿™é‡Œæ˜¯ç”»ä¸–ç•Œï¼Œæ¬¢è¿æ‚¨çš„åˆ°æ¥...
 
 ## Let's coding
 
@@ -11,6 +12,7 @@
 	git init
 	git add README.md
 	git commit -m "first commit"
+
 	git remote add origin https://github.com/YaoXiang123/Draw-the-world.git
 	git push -u origin master
 
