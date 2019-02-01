@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    Ajax()
+    function Ajax() {
+        var data="";
+        let xhr = new XMLHttpRequest();
+        xhr.open('get','这里url地址',false);  //是否异步 false
+        xhr.onreadystatechange = function () {
+            console.log(xhr.readyState);
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                console.log("1");
+                data = JSON.parse(xhr.responseText);
+            }
+
+            console.log(data);
+        };
+        xhr.send();
+        console.log(data+"***************")//打印请求结果
+    }
+</script>
+</html>
